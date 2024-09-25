@@ -1,11 +1,27 @@
-import Image from "next/image";
+import AboutSectionOne from "../components/About/AboutSectionOne";
+import AboutSectionTwo from "../components/About/AboutSectionTwo";
+import Courses from "../components/Courses";
+import Brands from "../components/Brands";
+import Contact from "../components/Contact";
+import Features from "../components/Features";
+import Hero from "../components/Hero";
+import Pricing from "../components/Pricing";
+import Testimonials from "../components/Testimonials";
+import Video from "../components/Video";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>
-        Hello Welcome Home!
-      </h1>
-    </main>
+    <>
+      <Hero />
+      <Features />
+      <Courses />
+      <Video />
+      <Brands />
+      <AboutSectionOne />
+      <AboutSectionTwo />
+      <Testimonials />
+      <Pricing />
+      <Contact />
+    </>
   );
 }
